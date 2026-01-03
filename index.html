@@ -1,108 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniro - Furniture Store</title>
+    <title>Furniro Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-    <header class="navbar">
+    <nav class="navbar">
         <div class="logo">
-            <img src="./assets/logo2.jfif" alt="Furniro Logo"> 
+            <img src="./assets/logo2.jfif" alt="Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
         <div class="nav-icons">
             <i class="fa-regular fa-user"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
-    </header>
+    </nav>
 
     <section class="hero">
-        <img src="./assets/Home2.jpg" class="hero-bg-img" alt="Background">
         <div class="hero-content">
             <p class="subtitle">New Arrival</p>
             <h1>Discover Our <br> New Collection</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-            <button class="btn-primary">BUY NOW</button>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis.</p>
+            <button class="buy-btn">BUY NOW</button>
         </div>
     </section>
 
-    <section class="range-section">
+    <section class="browse-range">
         <h2>Browse The Range</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
         <div class="range-grid">
             <div class="range-item">
-                <img src="./assets/dining.jpg" alt="Dining">
-                <p>Dining</p>
+                <div class="img-container">
+                    <img src="./assets/dining.jpg" alt="Dining">
+                </div>
+                <h3>Dining</h3>
             </div>
             <div class="range-item">
-                <img src="./assets/living.jpg" alt="Living">
-                <p>Living</p>
+                <div class="img-container">
+                    <img src="./assets/living.jpg" alt="Living">
+                </div>
+                <h3>Living</h3>
             </div>
             <div class="range-item">
-                <img src="./assets/bedroom.jpg" alt="Bedroom">
-                <p>Bedroom</p>
+                <div class="img-container">
+                    <img src="./assets/bedroom.jpg" alt="Bedroom">
+                </div>
+                <h3>Bedroom</h3>
             </div>
         </div>
     </section>
 
-    <section class="products-section">
-        <h2>Our Products</h2>
+    <section class="products-container">
+        <h2 class="section-title">Our Products</h2>
+
         <div class="product-grid">
             <div class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./assets/p1.png" alt="Syltherine">
-                    <div class="badge discount">-30%</div>
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=500" alt="Syltherine">
+                    <span class="badge badge-discount">-30%</span>
                     <div class="overlay">
-                        <button class="btn-white">Add to cart</button>
-                        <div class="overlay-icons">
+                        <button class="add-btn">Add to cart</button>
+                        <div class="action-icons">
                             <span><i class="fa-solid fa-share-nodes"></i> Share</span>
-                            <span><i class="fa-solid fa-right-left"></i> Compare</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
                             <span><i class="fa-regular fa-heart"></i> Like</span>
                         </div>
                     </div>
                 </div>
-                <div class="product-info">
+                <div class="details">
+                    <h3>Syltherine</h3>
+                    <p>Stylish cafe chair</p>
+                    <div class="price">
+                        <span class="curr">Rp 2.500.000</span>
+                        <span class="old">Rp 3.500.000</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=500" alt="Leviosa">
+                    <div class="overlay">
+                        <button class="add-btn">Add to cart</button>
+                        <div class="action-icons">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Leviosa</h3>
+                    <p>Stylish cafe chair</p>
+                    <div class="price">
+                        <span class="curr">Rp 2.500.000</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=500" alt="Lolito">
+
+                    <span class="badge badge-discount">-50%</span>
+                    <div class="overlay">
+                        <button class="add-btn">Add to cart</button>
+                        <div class="action-icons">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Lolito</h3>
+                    <p>Luxury big sofa</p>
+                    <div class="price">
+                        <span class="curr">Rp 7.000.000</span>
+                        <span class="old">Rp 14.000.000</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=500" alt="Respira">
+                    <span class="badge badge-new">New</span>
+                    <div class="overlay">
+                        <button class="add-btn">Add to cart</button>
+                        <div class="action-icons">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="details">
+                    <h3>Respira</h3>
+                    <p>Outdoor bar table and stool</p>
+                    <div class="price">
+                        <span class="curr">Rs 500.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="products-container">
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=500" alt="Syltherine">
+                    <span class="badge badge-discount">-30%</span>
+                    <div class="overlay">
+                        <button class="add-btn">Add to cart</button>
+                        <div class="overlay-links">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
                     <h3>Syltherine</h3>
                     <p>Stylish cafe chair</p>
                     <div class="price-box">
-                        <span class="current-price">Rp 2.500.000</span>
-                        <span class="old-price">Rp 3.500.000</span>
+                        <span class="curr">Rs 2.500.000</span>
+                        <span class="old">Rs 3.500.000</span>
                     </div>
                 </div>
             </div>
+
             <div class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./assets/p2.png" alt="Respira">
-                    <div class="badge new">New</div>
-                    <div class="overlay">
-                        <button class="btn-white">Add to cart</button>
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=500" alt="Leviosa">
+                    <div class="overlay active-overlay"> <button class="add-btn">Add to cart</button>
+                        <div class="overlay-links">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
                     </div>
                 </div>
-                <div class="product-info">
-                    <h3>Respira</h3>
-                    <p>Outdoor bar table</p>
+                <div class="details">
+                    <h3>Leviosa</h3>
+                    <p>Stylish cafe chair</p>
                     <div class="price-box">
-                        <span class="current-price">Rp 500.000</span>
+                        <span class="curr">Rs 2.500</span>
+                        <!-- <span calss="old">Rs 3000.</span> -->
                     </div>
                 </div>
             </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=500" alt="Leviosa">
+                    <div class="overlay active-overlay"> <button class="add-btn">Add to cart</button>
+                        <div class="overlay-links">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>xyz</h3>
+                    <p>lorem</p>
+                    <div class="details">
+                        <span class="curr">Rs 2.500</span>
+
+                    </div>
+                </div>
             </div>
-        <button class="btn-outline">Show More</button>
+
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=500" alt="Leviosa">
+                    <div class="overlay active-overlay"> <button class="add-btn">Add to cart</button>
+                        <div class="overlay-links">
+                            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+                            <span><i class="fa-solid fa-arrows-rotate"></i> Compare</span>
+                            <span><i class="fa-regular fa-heart"></i> Like</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>xyz</h3>
+                    <p>lorem</p>
+                    <div class="details">
+                        <span class="curr">Rp 2.500</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </section>
 
+    <div class="footer-action">
+        <button class="show-more-btn">Show More</button>
+    </div>
+
+    <section class="gallery">
+    <div class="gallery-header">
+        <p>Share your setup with</p>
+        <h2>#FuniroFurniture</h2>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-left">
+            <div class="top">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=500" alt="shelf" class="g-img">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7eaa511?q=80&w=800" alt="laptop" class="g-img">
+            </div>
+            <div class="bottom">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35a6?q=80&w=400" alt="chair" class="g-img">
+                <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?q=80&w=600" alt="vase" class="g-img">
+            </div>
+        </div>
+
+        <div class="gallery-center">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc2f51ac9?q=80&w=600" alt="dining" class="g-img">
+        </div>
+
+        <div class="gallery-right">
+            <div class="top">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800" alt="bed" class="g-img">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=500" alt="wall" class="g-img">
+            </div>
+            <div class="bottom">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=400" alt="frame" class="g-img">
+                <img src="https://images.unsplash.com/photo-1556911220-e15202115657?q=80&w=500" alt="kitchen" class="g-img">
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
+
 </html>
